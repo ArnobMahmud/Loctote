@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f0eb;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: brown;
+}
+hr {
+  background-color: rgb(126, 123, 123);
+}
+.top_title {
+  background-color: #f3f0eb;
+}
+.top_title a {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: black;
+  font-weight: 200;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top_title {
+  justify-content: flex-end !important;
+}
+
+header {
+  background-color: #f3f0eb;
+}
+
+.nav-item a {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+}
+.nav-item {
+  padding: 0px 10px;
+}
+
+.nav-link {
+  border-bottom: 2px solid transparent;
+  transition: all linear 0.3s;
+}
+
+.nav-link:hover {
+  color: brown;
+  border-bottom: 2px solid brown;
+}
+
+.bottom_title {
+  background-color: #333333;
+  padding-top: 160px;
+}
+.bottom_title h6 {
+  padding: 0;
+  margin: 0;
+  color: #d4be84;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+header {
+  padding: 70px 0px;
+}
+.navbar-brand {
+  margin-right: 0 !important;
+  right: 50%;
+  transform: translate(50%, -20px);
+  top: 0;
+  position: absolute;
+}
+header {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(63, 62, 62);
+  z-index: 99;
+}
+.navbar-brand img {
+  max-width: 150px;
+}
+.banner {
+  background-image: url(https://i.shgcdn.com/bf618304-04e4-4c72-8777-ceef7532de96/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-color: #00000073;
+}
+.banner h1 {
+  color: white;
+  padding: 200px 0px;
+}
+
+.products {
+  padding: 30px 0px;
+}
+
+.products a {
+  color: black;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  padding: 1px 0px;
+}
+footer ul li {
+  list-style: none;
+  line-height: 2;
+}
+
+footer span {
+  font-size: 22px;
+  padding-bottom: 20px;
+  color: rgb(39, 29, 29);
+}
+footer ul li a {
+  color: black;
+  font-size: 19px;
+}
+
+footer ul li a :hover {
+  color: brown;
+}
+
+footer {
+  padding: 40px 0px 10px;
+  border-top: 1px solid black;
+}
+
+footer p {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(66, 66, 66);
+}
