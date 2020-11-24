@@ -26,6 +26,8 @@ a:hover {
 hr {
   background-color: rgb(126, 123, 123);
 }
+
+/* TOP TITLE STARTS */
 .top_title {
   background-color: #f3f0eb;
 }
@@ -40,22 +42,23 @@ hr {
   padding-bottom: 20px;
 }
 
-.top_title {
+.top_title ul {
   justify-content: flex-end !important;
 }
 
+/* HEADER STARTS */
 header {
   background-color: #f3f0eb;
+  padding: 70px 0px;
 }
-
+.nav-item {
+  padding: 0px 10px;
+}
 .nav-item a {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 20px;
   color: black;
-}
-.nav-item {
-  padding: 0px 10px;
 }
 
 .nav-link {
@@ -67,30 +70,16 @@ header {
   color: brown;
   border-bottom: 2px solid brown;
 }
-
-.bottom_title {
-  background-color: #333333;
-  padding-top: 160px;
-}
-.bottom_title h6 {
-  padding: 0;
-  margin: 0;
-  color: #d4be84;
-  padding: 10px 0px;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-header {
-  padding: 70px 0px;
-}
 .navbar-brand {
   margin-right: 0 !important;
   right: 50%;
   transform: translate(50%, -20px);
   top: 0;
   position: absolute;
+}
+
+.navbar-brand img {
+  max-width: 150px;
 }
 header {
   position: fixed;
@@ -100,9 +89,23 @@ header {
   border-bottom: 1px solid rgb(63, 62, 62);
   z-index: 99;
 }
-.navbar-brand img {
-  max-width: 150px;
+
+/* BOTTOM TITLE STARTS */
+.bottom_title h6 {
+  padding: 0;
+  margin: 0;
+  color: #d4be84;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
+.bottom_title {
+  background-color: #333333;
+  padding-top: 160px;
+}
+
+/* BANNER STARTS */
 .banner {
   background-image: url(https://i.shgcdn.com/bf618304-04e4-4c72-8777-ceef7532de96/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
   background-repeat: no-repeat;
@@ -116,14 +119,18 @@ header {
   padding: 200px 0px;
 }
 
+/* PRODUCTS DETAILS STARTS */
+.products_details {
+}
 .products {
-  padding: 30px 0px;
 }
-
-.products a {
-  color: black;
+.image_sec {
 }
-
+.image_sec img {
+}
+.products_content {
+}
+/* FOOTER STARTS */
 footer ul {
   margin: 0;
   padding: 0;
@@ -142,6 +149,7 @@ footer span {
 footer ul li a {
   color: black;
   font-size: 19px;
+  transition: all linear 0.3s;
 }
 
 footer ul li a :hover {
@@ -157,4 +165,43 @@ footer p {
   font-size: 20px;
   text-align: center;
   color: rgb(66, 66, 66);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 576px) {
+  .bottom_title h6 {
+    letter-spacing: 1px;
+  }
+
+  .bottom_title {
+    padding-top: 40px;
+  }
+
+  header {
+    padding: 30px 0px;
+  }
+
+  .banner h1 {
+    color: white;
+    padding: 139px 0px;
+    font-size: 29px;
+  }
+
+  footer span {
+    font-size: 20px;
+    padding: 20px 0px;
+    color: rgb(39, 29, 29);
+  }
+
+  footer ul li a {
+    color: black;
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding-top: 15px;
+  }
 }
