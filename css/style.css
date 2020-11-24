@@ -5,12 +5,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-p,
+img {
+  max-width: 100%;
+}
 a {
   margin: 0;
   padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #f3f0eb;
   font-family: "Saira Condensed", sans-serif;
@@ -121,8 +132,10 @@ header {
 
 /* PRODUCTS DETAILS STARTS */
 .products_details {
+  padding: 50px 0px;
 }
 .products {
+  padding: 30px 0px;
 }
 .image_sec {
 }
@@ -130,6 +143,42 @@ header {
 }
 .products_content {
 }
+
+.box {
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: 0;
+  right: 0;
+  padding: 5px 15px;
+  font-size: 22px;
+  z-index: 90;
+}
+.image_view {
+  position: relative;
+  overflow: hidden;
+}
+
+.front_view img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.5s;
+}
+
+.hover_view img {
+  position: absolute;
+  right: 0;
+  bottom: -100%;
+  z-index: 60;
+  transition: all 0.5s;
+}
+.front_view img :hover.hover_view img {
+  bottom: 0;
+  z-index: 10;
+}
+
 /* FOOTER STARTS */
 footer ul {
   margin: 0;
