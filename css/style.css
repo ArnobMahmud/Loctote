@@ -12,6 +12,16 @@ a {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: brown;
+}
+hr {
+  background-color: rgb(126, 123, 123);
+}
 h1,
 h2,
 h3,
@@ -26,16 +36,15 @@ body {
   background-color: #f3f0eb;
   font-family: "Saira Condensed", sans-serif;
 }
-
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  color: brown;
-}
-hr {
-  background-color: rgb(126, 123, 123);
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(https://cdn.iconscout.com/icon/free/png-256/hamburger-menu-462145.png);
 }
 
 /* TOP TITLE STARTS */
@@ -217,6 +226,60 @@ footer p {
 }
 
 /* RESPONSIVE DESIGN */
+@media (min-width: 1200px) {
+  .bottom_title {
+    background-color: #333333;
+    padding-top: 155px;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    background-color: #f3f0eb;
+    padding: 30px 0px;
+  }
+  .bottom_title {
+    background-color: #333333;
+    padding-top: 41px;
+  }
+  .banner h1 {
+    color: white;
+    padding: 180px 0px;
+    font-size: 28px;
+  }
+  footer img {
+    padding: 40px 0px;
+  }
+  footer p {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding: 20px 0px 5px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-color: #f3f0eb;
+    padding: 30px 0px;
+  }
+  .bottom_title {
+    background-color: #333333;
+    padding-top: 35px;
+  }
+  .banner h1 {
+    color: white;
+    padding: 160px 0px;
+    font-size: 23px;
+  }
+  .bottom_title h6 {
+    padding: 0;
+    margin: 0;
+    color: #d4be84;
+    padding: 10px 0px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+}
 @media (max-width: 576px) {
   .bottom_title h6 {
     letter-spacing: 1px;
