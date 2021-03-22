@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 img {
   max-width: 100%;
 }
@@ -177,10 +180,10 @@ header {
 }
 
 /* Hover Position Effect Ends*/
-.product_description {
+/* .product_description {
 }
 .product_description h6 {
-}
+} */
 .product_description strike {
   display: inline-block;
   font-size: 14px;
